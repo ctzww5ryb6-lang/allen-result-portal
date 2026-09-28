@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Test Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">STH</div>
+
+    <div>
+        <h1>Student Test Hub</h1>
+        <p>Demo Examination Result Portal</p>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="search-box">
+
+        <h2>View Your Result</h2>
+
+        <p class="subtitle">
+            Enter your Form ID to view your demo result
+        </p>
+
+        <input
+            type="text"
+            id="formId"
+            placeholder="Enter Form ID"
+        >
+
+        <br>
+
+        <button onclick="showResult()">
+            View Result
+        </button>
+
+        <p id="error"></p>
+
+    </section>
+
+
+    <section id="result" class="result-card">
+
+        <div class="demo-warning">
+            DEMO RESULT — NOT AN OFFICIAL RESULT
+        </div>
+
+        <div class="student-header">
+
+            <div>
+                <h2 id="studentName"></h2>
+
+                <p>
+                    Form ID:
+                    <strong id="studentId"></strong>
+                </p>
+            </div>
+
+            <div class="test-name">
+
+                <span>TEST</span>
+
+                <strong id="testName"></strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="marks-grid">
+
+            <div class="subject">
+                <span>Physics</span>
+                <strong id="physics"></strong>
+                <small>/ 180</small>
+            </div>
+
+            <div class="subject">
+                <span>Chemistry</span>
+                <strong id="chemistry"></strong>
+                <small>/ 180</small>
+            </div>
+
+            <div class="subject">
+                <span>Biology</span>
+                <strong id="biology"></strong>
+                <small>/ 360</small>
+            </div>
+
+        </div>
+
+
+        <div class="total-box">
+
+            <div>
+                <span>Total Score</span>
+                <strong id="total"></strong>
+                <small>/ 720</small>
+            </div>
+
+            <div>
+                <span>Percentage</span>
+                <strong id="percentage"></strong>
+            </div>
+
+        </div>
+
+
+        <div class="performance">
+
+            <h3>Performance Summary</h3>
+
+            <div class="performance-row">
+
+                <span>Physics</span>
+
+                <div class="bar">
+                    <div id="physicsBar"></div>
+                </div>
+
+            </div>
+
+
+            <div class="performance-row">
+
+                <span>Chemistry</span>
+
+                <div class="bar">
+                    <div id="chemistryBar"></div>
+                </div>
+
+            </div>
+
+
+            <div class="performance-row">
+
+                <span>Biology</span>
+
+                <div class="bar">
+                    <div id="biologyBar"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    © 2026 Student Test Hub · Demo Website
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

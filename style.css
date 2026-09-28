@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #172033;
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+    background: #172033;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #3b82f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header h1 {
+    font-size: 22px;
+}
+
+.header p {
+    margin-top: 4px;
+    color: #b9c2d0;
+    font-size: 13px;
+}
+
+/* MAIN */
+
+.container {
+    width: min(900px, 92%);
+    margin: 45px auto;
+}
+
+/* SEARCH */
+
+.search-box {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    text-align: center;
+}
+
+.search-box h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    width: min(450px, 100%);
+    padding: 15px 18px;
+    border: 1px solid #d7dce5;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box input:focus {
+    border-color: #3b82f6;
+}
+
+.search-box button {
+    margin-top: 15px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+}
+
+#error {
+    margin-top: 15px;
+    color: #dc2626;
+}
+
+/* RESULT */
+
+.result-card {
+    display: none;
+    margin-top: 30px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* DEMO LABEL */
+
+.demo-warning {
+    background: #fff7ed;
+    color: #c2410c;
+    text-align: center;
+    padding: 11px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* STUDENT HEADER */
+
+.student-header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.student-header h2 {
+    font-size: 25px;
+}
+
+.student-header p {
+    margin-top: 8px;
+    color: #6b7280;
+}
+
+.test-name {
+    text-align: right;
+}
+
+.test-name span {
+    display: block;
+    color: #6b7280;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.test-name strong {
+    font-size: 16px;
+}
+
+/* MARKS */
+
+.marks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 25px 30px;
+}
+
+.subject {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    padding: 22px;
+    border-radius: 14px;
+}
+
+.subject span {
+    display: block;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.subject strong {
+    font-size: 28px;
+}
+
+.subject small {
+    color: #64748b;
+}
+
+/* TOTAL */
+
+.total-box {
+    margin: 0 30px 30px;
+    padding: 25px;
+    border-radius: 15px;
+    background: #172033;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-box span {
+    display: block;
+    color: #b9c2d0;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.total-box strong {
+    font-size: 28px;
+}
+
+/* PERFORMANCE */
+
+.performance {
+    padding: 0 30px 35px;
+}
+
+.performance h3 {
+    margin-bottom: 22px;
+}
+
+.performance-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.performance-row span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bar {
+    height: 9px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    width: 0%;
+    background: #3b82f6;
+    border-radius: 20px;
+    transition: width 0.8s ease;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #7b8494;
+    font-size: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .header {
+        padding: 18px 5%;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        margin: 25px auto;
+    }
+
+    .search-box {
+        padding: 25px 18px;
+    }
+
+    .student-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .test-name {
+        text-align: left;
+    }
+
+    .marks-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .total-box {
+        margin: 0 20px 25px;
+        gap: 20px;
+    }
+
+    .total-box strong {
+        font-size: 23px;
+    }
+
+    .performance {
+        padding: 0 20px 25px;
+    }
+
+    .performance-row {
+        grid-template-columns: 85px 1fr;
+    }
+}
