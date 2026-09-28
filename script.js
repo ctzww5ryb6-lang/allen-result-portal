@@ -1,5 +1,5 @@
 const results = {
-    "DEMO001": {
+    "2460638731": {
         name: "Harshit Kumar",
         test: "Practice Test 01",
         physics: 145,
@@ -8,15 +8,15 @@ const results = {
     },
 
     "DEMO002": {
-        name: "Rahul Sharma",
+        name: "Sakshi Priyashi",
         test: "Practice Test 01",
         physics: 120,
         chemistry: 145,
         biology: 277
     },
 
-    "DEMO003": {
-        name: "Aman Kumar",
+    "2461004056": {
+        name: "Divyanshu Kiahan",
         test: "Practice Test 02",
         physics: 160,
         chemistry: 150,
