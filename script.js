@@ -3,16 +3,16 @@ const results = {
         name: "Harshit Kumar",
         test: "Practice Test 01",
         physics: 145,
-        chemistry: 157,
-        biology: 308
+        chemistry: 154,
+        biology: 312
     },
 
-    "DEMO002": {
+    "123456": {
         name: "Sakshi Priyashi",
         test: "Practice Test 01",
         physics: 120,
         chemistry: 145,
-        biology: 277
+        biology: 320
     },
 
     "2461004056": {

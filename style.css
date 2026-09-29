@@ -27,7 +27,7 @@ body {
     height: 48px;
     border-radius: 12px;
     overflow: hidden;
-    background: white;
+    background: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,15 +122,6 @@ body {
 
 /* DEMO LABEL */
 
-.demo-warning {
-    background: #fff7ed;
-    color: #c2410c;
-    text-align: center;
-    padding: 11px;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-}
 
 /* STUDENT HEADER */
 
