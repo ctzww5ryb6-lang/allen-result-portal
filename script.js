@@ -38,7 +38,7 @@ function displayResult(formId) {
 
   if (!student) {
     result.style.display = "none";
-    error.textContent = "No demo result found for this Form ID. Please check and try again.";
+    error.textContent = "No result found for this Form ID. Please check and try again.";
     return;
   }
 
