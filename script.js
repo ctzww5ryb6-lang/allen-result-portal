@@ -1,7 +1,8 @@
 const results = {
     "2460638731": {
         name: "Harshit Kumar",
-        test: "Practice Test 01",
+        test: "Minor Test CBT Mode ",
+        date: "21st Nov,2026",
         physics: 138,
         chemistry: 150,
         biology: 310
