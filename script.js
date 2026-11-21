@@ -2,9 +2,9 @@ const results = {
     "2460638731": {
         name: "Harshit Kumar",
         test: "Practice Test 01",
-        physics: 145,
-        chemistry: 154,
-        biology: 312
+        physics: 138,
+        chemistry: 150,
+        biology: 310
     },
 
     "123456": {
